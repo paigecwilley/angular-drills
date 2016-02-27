@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app='filterText'>
+<head>
+	<title></title>
+</head>
+<body ng-controller='mainCtrl'>
+
+<input ng-model='search'>
+<p ng-repeat='item in list | filter: search' >{{item.name}} , {{item.age}}</p>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="mainCtrl.js"></script>
+<script type="text/javascript" src="mainSrvc.js"></script>
+</body>
+</html>
